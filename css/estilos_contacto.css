@@ -1,0 +1,222 @@
+/* Banner */
+
+#banner-contacto{
+    background: url("/img/contactanos.jpg") center center/cover no-repeat;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-texto{
+    color: white;
+}
+
+.banner-texto h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.banner-texto p{
+    font-size: 20px;
+    max-width: 700px;
+    margin: auto;
+   color: #060606;
+}
+
+/* Información */
+
+#informacion{
+    background-color: #ffffff;
+}
+
+.info-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+
+.info{
+    background: #eef5ff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,.15);
+}
+
+.info h3{
+    color: #0B5ED7;
+    margin-bottom: 15px;
+}
+
+.info p{
+    line-height: 28px;
+}
+
+.boton-mensajes{
+    display: block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    margin: 15px auto 0;
+    border: 2px solid #0B5ED7;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.boton-mensajes:hover{
+    background-color: #0B5ED7;
+}
+/* Formulario */
+
+#formulario{
+    background-color: #eef5ff;
+}
+
+form{
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
+
+.form-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #0B5ED7;
+}
+
+input,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus,
+textarea:focus{
+    outline: none;
+    border-color: #0B5ED7;
+}
+
+textarea{
+    resize: vertical;
+    margin-bottom: 20px;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+/* Modal */
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-contenido{
+    background: white;
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+}
+
+.modal-contenido h3{
+    color: #0B5ED7;
+    margin-bottom: 20px;
+}
+
+.modal-contenido p{
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.modal-contenido button{
+    background: #0B5ED7;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 6px;
+}
+
+/* Mapa */
+
+#mapa{
+    background-color: white;
+}
+
+#mapa iframe{
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+    .info-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .form-grid{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* Celular */
+
+@media(max-width:768px){
+
+    #banner-contacto{
+        height: 250px;
+        padding: 20px;
+    }
+
+    .banner-texto h2{
+        font-size: 35px;
+    }
+
+    .banner-texto p{
+        font-size: 16px;
+    }
+
+    .info-grid{
+        grid-template-columns: 1fr;
+    }
+
+    form{
+        padding: 25px;
+    }
+
+    #mapa iframe{
+        height: 250px;
+    }
+
+}

@@ -1,0 +1,178 @@
+/* Página de citas */
+
+#cita{
+    background-color: #eef5ff;
+}
+
+#cita p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Formulario */
+
+#formulario-cita{
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
+
+/* Etiquetas */
+
+#formulario-cita label{
+    display: block;
+    color: #0B5ED7;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Campos */
+
+#formulario-cita input[type="text"],
+#formulario-cita input[type="date"],
+#formulario-cita input[type="time"],
+#formulario-cita select,
+#formulario-cita textarea{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* Campos al seleccionarlos */
+
+#formulario-cita input:focus,
+#formulario-cita select:focus,
+#formulario-cita textarea:focus{
+    outline: none;
+    border-color: #0B5ED7;
+    box-shadow: 0 0 5px rgba(11,94,215,.25);
+}
+
+/* Botones */
+
+.botones{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.botones input{
+    background-color: #0B5ED7;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.botones input:hover{
+    background-color: #084298;
+    transform: translateY(-2px);
+}
+
+/* Ventana modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+/* Contenido del modal */
+
+.modal-contenido {
+    background-color: white;
+
+    width: 400px;
+    max-width: 90%;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Título */
+
+.modal-contenido h3 {
+    margin-bottom: 20px;
+}
+
+/* Mensaje */
+
+.modal-contenido p {
+    line-height: 1.8;
+}
+
+/* Botón */
+
+.modal-contenido button {
+    margin-top: 20px;
+
+    padding: 10px 25px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #1261d6;
+    color: white;
+
+    cursor: pointer;
+}
+
+/* Celular */
+
+@media(max-width:768px){
+
+    #formulario-cita{
+        width: 95%;
+        padding: 25px;
+    }
+
+    #formulario-cita input,
+    #formulario-cita select,
+    #formulario-cita textarea{
+        font-size: 15px;
+    }
+
+    .modal-contenido{
+        width: 90%;
+        padding: 25px 20px;
+    }
+
+    .modal-contenido h3{
+        font-size: 20px;
+    }
+
+    .modal-contenido p{
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .modal-contenido button{
+        width: 100%;
+    }
+}

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Garritas Peludas | Calendario de Citas</title>
+
+    <link rel="stylesheet" href="/css/estilos_calendario.css">
+    <link rel="stylesheet" href="/css/estilos_general.css">
+    <link rel="stylesheet" href="/css/animaciones.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="contenedor-header">
+
+            <div class="logo">
+
+                <a href="/index.html">
+
+                    <img src="/img/logo1.png" alt="Garritas Peludas">
+
+                </a>
+
+            </div>
+
+            <div class="atencion">
+
+                <p>Atencion Medica</p>
+
+                <p>24 Horas</p>
+
+            </div>
+
+            <div class="menu-hamburguesa" id="btnMenu">
+
+                ☰
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- MENÚ -->
+
+    <nav id="menu">
+
+        <ul class="menu">
+
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/pages/nosotros.html">Nosotros</a></li>
+            <li><a href="/pages/servicios.html">Servicios</a></li>
+            <li><a href="/pages/contacto.html">Contacto</a></li>
+            <li><a href="/pages/cita.html">Citas</a></li>
+            <li><a href="/pages/calendario.html" class="activo">Calendario</a></li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+
+    <main>
+
+        <section id="calendario">
+
+            <div class="contenedor">
+
+                <h2>Calendario de Citas</h2>
+
+                <p>
+                    Consulta las fechas y horarios disponibles para
+                    la atención veterinaria de tu mascota.
+                </p>
+
+
+                <!-- CONSULTA DE FECHA -->
+
+                <div class="consulta-fecha">
+
+                    <label for="fechaConsulta">
+                        Seleccione una fecha
+                    </label>
+
+                    <input type="date" id="fechaConsulta">
+
+                    <input type="button" value="Consultar" onclick="mostrarCitas()">
+
+                </div>
+
+
+                <!-- RESULTADO -->
+
+                <div id="resultadoCalendario">
+
+                    <h3>Horarios de atención</h3>
+
+                    <div id="listaHorarios">
+
+                        <p>
+                            Seleccione una fecha para consultar
+                            los horarios disponibles.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INFORMACIÓN -->
+
+                <div class="informacion-calendario">
+
+                    <p>
+                        <strong>Horario de atención:</strong>
+                    </p>
+
+                    <p>
+                        Lunes a Viernes: 8:00 am - 6:00 pm
+                    </p>
+
+                    <p>
+                        Sábados: 8:00 am - 2:00 pm
+                    </p>
+
+                    <p>
+                        Los horarios marcados como ocupados
+                        no se encuentran disponibles.
+                    </p>
+
+                </div>
+
+
+                <!-- BOTÓN PARA SOLICITAR CITA -->
+
+                <div class="boton-cita">
+
+                    <a href="/pages/cita.html">
+                        Solicitar una cita
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="contenedor-footer">
+
+
+            <div class="footer-columna">
+
+                <h3>Garritas Peludas</h3>
+
+                <p>
+                    Brindamos atención veterinaria con profesionales
+                    comprometidos con el bienestar y la salud de tus mascotas.
+                </p>
+
+            </div>
+
+
+            <div class="footer-columna">
+
+                <h3>Enlaces</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="/index.html">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/nosotros.html">
+                            Nosotros
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/servicios.html">
+                            Servicios
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/cita.html">
+                            Citas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/calendario.html">
+                            Calendario
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="footer-columna">
+
+                <h3>Horario</h3>
+
+                <p>
+                    Lunes a Viernes
+                </p>
+
+                <p>
+                    8:00 am - 6:00 pm
+                </p>
+
+                <p>
+                    Sábados
+                </p>
+
+                <p>
+                    8:00 am - 2:00 pm
+                </p>
+
+                <p>
+                    Clinica
+                </p>
+
+                <p>
+                    24Horas
+                </p>
+
+            </div>
+
+
+            <div class="footer-columna">
+
+                <h3>Síguenos</h3>
+
+                <a href="#">
+                    Facebook
+                </a>
+
+                <br>
+
+                <a href="#">
+                    Instagram
+                </a>
+
+                <br>
+
+                <a href="#">
+                    TikTok
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copy">
+
+            <p>
+                © 2026 Garritas Peludas | Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="/js/menu.js"></script>
+    <script src="../js/calendario.js"></script>
+
+</body>
+
+</html>

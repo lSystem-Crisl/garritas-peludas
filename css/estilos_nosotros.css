@@ -1,0 +1,224 @@
+/* Banner Nosotros */
+
+#banner-nosotros{
+    background: url("/img/banner-nosotros.jpeg") center center/cover no-repeat;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-texto{
+    color: white;
+}
+
+.banner-texto h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.banner-texto p{
+    font-size: 20px;
+    max-width: 700px;
+}
+
+/* Historia */
+
+#historia{
+    background: white;
+}
+
+.historia-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.historia-imagen img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.historia-texto h2{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.historia-texto p{
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Misión y Visión */
+
+#mision-vision{
+    background: #eef5ff;
+}
+
+.mision-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.caja{
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.15);
+}
+
+.caja h3{
+    text-align: center;
+    color: #0B5ED7;
+    margin-bottom: 15px;
+}
+
+.caja p{
+    text-align: center;
+    line-height: 28px;
+}
+
+/* Valores */
+
+#valores{
+    background: white;
+}
+
+.valores-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+
+.valor{
+    background: #eef5ff;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,.10);
+}
+
+.valor h3{
+    color: #0B5ED7;
+    margin-bottom: 15px;
+}
+
+.valor p{
+    line-height: 26px;
+}
+
+/* Equipo */
+
+#equipo{
+    background: #eef5ff;
+}
+
+.equipo-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.doctor{
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,.15);
+}
+
+.doctor img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.doctor h3{
+    margin: 20px 0 10px;
+    color: #0B5ED7;
+}
+
+.doctor p{
+    margin-bottom: 20px;
+}
+
+/* Video */
+
+#video{
+    background: white;
+}
+
+#video iframe{
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+    .historia-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .mision-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .valores-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .equipo-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #video iframe{
+        height: 400px;
+    }
+
+}
+
+/* Celular */
+
+@media(max-width:768px){
+
+    #banner-nosotros{
+        height: 250px;
+        padding: 20px;
+    }
+
+    .banner-texto h2{
+        font-size: 35px;
+    }
+
+    .banner-texto p{
+        font-size: 16px;
+    }
+
+    .historia-grid,
+    .mision-grid,
+    .valores-grid,
+    .equipo-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .historia-texto h2{
+        text-align: center;
+    }
+
+    .historia-texto p{
+        text-align: center;
+    }
+
+    #video iframe{
+        height: 250px;
+    }
+
+}

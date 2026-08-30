@@ -1,0 +1,100 @@
+/* Panel interno */
+
+#mensajes{
+    background-color: #eef5ff;
+    min-height: 600px;
+    padding: 50px 0;
+}
+
+/* Encabezado */
+
+.encabezado-panel{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.encabezado-panel h2{
+    color: #0B5ED7;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.encabezado-panel p{
+    font-size: 17px;
+}
+
+
+/* Mensajes */
+
+.mensaje{
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+    border-left: 5px solid #0B5ED7;
+}
+
+.mensaje h3{
+    color: #0B5ED7;
+    margin-bottom: 15px;
+}
+
+.mensaje p{
+    margin: 8px 0;
+}
+
+
+/* Panel interno */
+
+.panel-titulo{
+    text-align: right;
+}
+
+.panel-titulo p:first-child{
+    color: white;
+    font-size: 18px;
+    margin: 0;
+}
+
+.panel-titulo p:last-child{
+    color: #FFD21F;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 3px 0 0;
+}
+
+/* Botón volver */
+
+.boton-volver{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #0B5ED7;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.boton-volver:hover{
+    background-color: #084298;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    #mensajes{
+        padding: 30px 15px;
+    }
+
+    .encabezado-panel h2{
+        font-size: 26px;
+    }
+
+    .mensaje{
+        padding: 20px;
+    }
+
+}

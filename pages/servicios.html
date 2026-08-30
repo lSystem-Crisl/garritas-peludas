@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Garritas Peludas | Clínica Veterinaria</title>
+
+    <link rel="stylesheet" href="/css/estilos_servicio.css">
+    <link rel="stylesheet" href="/css/estilos_general.css">
+    <link rel="stylesheet" href="/css/animaciones.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="contenedor-header">
+
+            <div class="logo">
+
+                <a href="/index.html">
+
+                    <img src="/img/logo1.png" alt="Garritas Peludas">
+
+                </a>
+
+            </div>
+
+            <div class="atencion">
+                <p>Atencion Medica </p>
+                <p>24 Horas</p>
+            </div>
+            <div class="menu-hamburguesa" id="btnMenu">
+
+                ☰
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- MENÚ -->
+
+    <nav id="menu">
+
+        <ul class="menu">
+
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/pages/nosotros.html">Nosotros</a></li>
+            <li><a href="/pages/servicios.html" class="activo">Servicios</a></li>
+            <li><a href="/pages/contacto.html">Contacto</a></li>
+            <li><a href="/pages/cita.html">Citas</a></li>
+            <li><a href="/pages/calendario.html">Calendario</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- CONTENIDO -->
+
+    <main>
+
+        <!-- Banner -->
+
+        <section id="banner-servicios">
+
+            <div class="banner-texto">
+
+                <h2>Nuestros Servicios</h2>
+
+                <p>
+                    Ofrecemos atención veterinaria integral para cuidar la salud y el bienestar de tu mascota.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Servicios -->
+
+        <section id="servicios">
+
+            <div class="contenedor">
+
+
+                <div class="servicios-grid">
+
+                    <article class="card" onclick="mostrarServicio('consulta')">
+
+                        <img src="../img/consulta1.jpg" alt="Consulta Veterinaria">
+
+                        <h3>Consulta Veterinaria</h3>
+
+                    </article>
+
+                    <article class="card" onclick="mostrarServicio('vacunacion')">
+
+                        <img src="../img/vacuna.jpg" alt="Vacunación">
+
+                        <h3>Vacunación</h3>
+
+                    </article>
+
+                    <article class="card" onclick="mostrarServicio('cirugia')">
+
+                        <img src="../img/cirugia2.jpg" alt="Cirugía">
+
+                        <h3>Cirugía</h3>
+
+                    </article>
+
+                    <article class="card" onclick="mostrarServicio('desparasitacion')">
+
+                        <img src="/img/desparacitacion.jpg" alt="Desparasitación">
+
+                        <h3>Desparasitación</h3>
+
+                    </article>
+
+                    <article class="card" onclick="mostrarServicio('peluqueria')">
+
+                        <img src="/img/bañoycorte.jpg" alt="Baño">
+
+                        <h3>Baño y Peluquería</h3>
+
+                    </article>
+
+                    <article class="card" onclick="mostrarServicio('farmacia')">
+
+                        <img src="../img/farmacia.jpg" alt="Farmacia">
+
+                        <h3>Farmacia Veterinaria</h3>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Información del servicio -->
+
+        <section id="informacion-servicio">
+
+            <div class="contenedor">
+
+                <h2 id="titulo-servicio"></h2>
+
+                <p id="descripcion-servicio"></p>
+
+                <a href="/pages/cita.html" id="boton-cita">
+                    Solicitar cita
+                </a>
+            </div>
+        </section>
+        <!-- Beneficios -->
+
+        <section id="beneficios">
+
+            <div class="contenedor">
+
+                <h2>¿Por qué elegirnos?</h2>
+
+                <div class="beneficios-grid">
+
+                    <article class="beneficio">
+
+                        <h3>Veterinarios Especialistas</h3>
+
+                        <p>
+                            Profesionales altamente capacitados para brindar una atención de calidad.
+                        </p>
+
+                    </article>
+
+                    <article class="beneficio">
+
+                        <h3>Atención 24 Horas</h3>
+
+                        <p>
+                            Emergencias veterinarias disponibles todos los días del año.
+                        </p>
+
+                    </article>
+
+                    <article class="beneficio">
+
+                        <h3>Equipos Modernos</h3>
+
+                        <p>
+                            Tecnología para diagnósticos rápidos y tratamientos precisos.
+                        </p>
+
+                    </article>
+
+                    <article class="beneficio">
+
+                        <h3>Amor por las Mascotas</h3>
+
+                        <p>
+                            Tratamos a cada paciente con respeto, cariño y responsabilidad.
+                        </p>
+
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Horarios -->
+
+        <section id="horarios">
+
+            <div class="contenedor">
+
+                <h2>Horarios de Atención</h2>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Servicio</th>
+                            <th>Horario</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Consulta Veterinaria</td>
+                            <td>08:00 am - 08:00 pm</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Vacunación</td>
+                            <td>09:00 am - 06:00 pm</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Cirugía</td>
+                            <td>Previa cita</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Baño y Peluquería</td>
+                            <td>09:00 am - 05:00 pm</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Emergencias</td>
+                            <td>24 Horas</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="contenedor-footer">
+
+            <div class="footer-columna">
+
+                <h3>Garritas Peludas</h3>
+
+                <p>
+                    Brindamos atención veterinaria con profesionales
+                    comprometidos con el bienestar y la salud de tus mascotas.
+                </p>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Enlaces</h3>
+
+                <ul>
+
+                    <li><a href="/index.html">Inicio</a></li>
+
+                    <li><a href="/pages/nosotros.html">Nosotros</a></li>
+
+                    <li><a href="/pages/servicios.html">Servicios</a></li>
+
+                    <li><a href="/pages/contacto.html">Contacto</a></li>
+                    <li><a href="/pages/cita.html">Citas</a></li>
+                    <li><a href="/pages/calendario.html">Calendario</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Horario</h3>
+
+                <p>Lunes a Viernes</p>
+
+                <p>8:00 am - 6:00 pm</p>
+
+                <p>Sábados</p>
+
+                <p>8:00 am - 2:00 pm</p>
+
+                <p>Clinica</p>
+
+                <p>24Horas</p>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Síguenos</h3>
+
+                <a href="#">Facebook</a><br>
+
+                <a href="#">Instagram</a><br>
+
+                <a href="#">TikTok</a>
+
+            </div>
+
+        </div>
+
+        <div class="copy">
+
+            <p>
+
+                © 2026 Garritas Peludas | Todos los derechos reservados.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="/js/menu.js"></script>
+    <script src="../js/servicios.js"></script>
+</body>
+
+</html>

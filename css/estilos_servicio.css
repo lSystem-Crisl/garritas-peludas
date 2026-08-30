@@ -1,0 +1,225 @@
+/* Banner */
+
+#banner-servicios{
+    background: url("/img/salaespera1.jpeg") center center/cover no-repeat;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-texto{
+    color: white;
+}
+
+.banner-texto h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.banner-texto p{
+    font-size: 20px;
+    max-width: 700px;
+    margin: auto;
+    
+}
+
+/* Servicios */
+
+#servicios{
+    background-color: #ffffff;
+}
+
+.servicios-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.card{
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+     box-shadow: 0 5px 12px rgba(0,0,0,.15);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+}
+
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+.card:hover img{
+    filter: brightness(0.50);
+}
+
+.card h3{
+    color: #0B5ED7;
+    margin: 20px 0 10px;
+}
+
+.card p{
+    padding: 0 20px 25px;
+    line-height: 28px;
+}
+
+/* Beneficios */
+
+#beneficios{
+    background-color: #eef5ff;
+}
+
+.beneficios-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+
+.beneficio{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,.15);
+}
+
+.beneficio h3{
+    color: #0B5ED7;
+    margin-bottom: 15px;
+}
+
+.beneficio p{
+    line-height: 28px;
+}
+
+/* Horarios */
+
+#horarios{
+    background-color: white;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+thead{
+    background-color: #0B5ED7;
+    color: white;
+}
+
+th,
+td{
+    border: 1px solid #dddddd;
+    padding: 15px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even){
+    background-color: #f5f5f5;
+}
+
+tbody tr:hover{
+    background-color: #dbe8ff;
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+    .servicios-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .beneficios-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+/* Celular */
+
+@media(max-width:768px){
+
+    #banner-servicios{
+        height: 250px;
+        padding: 20px;
+    }
+
+    .banner-texto h2{
+        font-size: 35px;
+    }
+
+    .banner-texto p{
+        font-size: 16px;
+    }
+
+    .servicios-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .beneficios-grid{
+        grid-template-columns: 1fr;
+    }
+
+    table{
+        font-size: 14px;
+    }
+
+    th,
+    td{
+        padding: 10px;
+    }
+
+}
+/* Información del servicio */
+
+#informacion-servicio{
+    background-color: #eef5ff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#informacion-servicio h2{
+    color: #0B5ED7;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+#descripcion-servicio{
+    max-width: 800px;
+    margin: 0 auto 25px;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+#boton-cita{
+    display: inline-block;
+    background-color: #0B5ED7;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#boton-cita:hover{
+    background-color: #084298;
+    transform: translateY(-2px);
+}
+
+.card:hover{
+    transform: translateY(-5px);
+   box-shadow: 0 12px 25px rgba(0,0,0,.30);
+    
+}
+#informacion-servicio{
+    scroll-margin-top: 20px;
+}

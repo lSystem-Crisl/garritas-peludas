@@ -1,0 +1,89 @@
+/* Botones */
+
+.boton{
+    transition: .3s;
+}
+
+.boton:hover{
+    transform: translateY(-3px);
+}
+
+/* Menú */
+
+.menu li a{
+    transition: .3s;
+}
+
+.menu li a:hover{
+    background-color: #198754;
+}
+
+/* Tarjetas */
+
+.card,
+.caja,
+.valor,
+.doctor{
+    transition: .3s;
+}
+
+.card:hover,
+.caja:hover,
+.doctor:hover{
+    transform: translateY(-10px);
+}
+
+.valor:hover{
+    transform: scale(1.05);
+}
+
+/* Imágenes */
+
+.galeria-grid img,
+.doctor img,
+.card img{
+    transition: .4s;
+}
+
+.galeria-grid img:hover{
+    transform: scale(1.05);
+}
+
+/* Enlaces Footer */
+
+.footer-columna a{
+    transition: .3s;
+}
+
+.footer-columna a:hover{
+    color: #FFD54F;
+}
+
+/* Logo */
+
+.logo img{
+    transition: .3s;
+}
+
+.logo img:hover{
+    transform: rotate(-5deg) scale(1.08);
+}
+
+/* Redes sociales */
+
+.redes a{
+    transition: .3s;
+}
+
+.redes a:hover{
+    transform: translateY(-5px);
+}
+
+/* Sombras */
+
+.card:hover,
+.caja:hover,
+.doctor:hover,
+.valor:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}

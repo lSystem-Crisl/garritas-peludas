@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garritas Peludas | Solicitar Cita</title>
+    <link rel="stylesheet" href="/css/estilos_cita.css">
+    <link rel="stylesheet" href="/css/estilos_general.css">
+    <link rel="stylesheet" href="/css/animaciones.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="contenedor-header">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="/img/logo1.png" alt="Garritas Peludas">
+                </a>
+            </div>
+            <div class="atencion">
+                <p>Atencion Medica </p>
+                <p>24 Horas</p>
+            </div>
+            <div class="menu-hamburguesa" id="btnMenu">
+                ☰
+            </div>
+        </div>
+    </header>
+
+    <!-- MENÚ -->
+    <nav id="menu">
+        <ul class="menu">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/pages/nosotros.html">Nosotros</a></li>
+            <li><a href="/pages/servicios.html">Servicios</a></li>
+            <li><a href="/pages/contacto.html">Contacto</a></li>
+            <li><a href="/pages/cita.html" class="activo">Citas</a></li>
+            <li><a href="/pages/calendario.html">Calendario</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <main>
+        <section id="cita">
+            <div class="contenedor">
+                <h2>Solicitar Cita Veterinaria</h2>
+                <p>Completa el siguiente formulario para solicitar una cita para tu mascota.</p>
+                <form id="formulario-cita">
+                    <label for="propietario">Nombre del propietario</label>
+
+                    <input type="text" id="propietario">
+                    <label for="mascota">Nombre de la mascota</label>
+
+                    <input type="text" id="mascota">
+
+                    <label for="tipoMascota">Tipo de mascota</label>
+
+                    <select id="tipoMascota">
+                        <option value="">Seleccione una opción</option>
+                        <option value="Perro">Perro</option>
+                        <option value="Gato">Gato</option>
+                        <option value="Ave">Ave</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+
+                    <label for="servicio">Servicio</label>
+
+                    <select id="servicio">
+                        <option value="">Seleccione un servicio</option>
+                        <option value="Consulta Veterinaria">Consulta Veterinaria</option>
+                        <option value="Vacunación">Vacunación </option>
+                        <option value="Cirugía">Cirugía</option>
+                        <option value="Desparasitación">Desparasitación</option>
+                        <option value="Baño y Peluquería">Baño y Peluquería</option>
+                        <option value="Farmacia Veterinaria">Farmacia Veterinaria</option>
+                    </select>
+
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha">
+
+                    <label for="hora">Hora</label>
+                    <select id="hora">
+                        <option value="">Seleccione una hora</option>
+                        <option value="08:00">08:00</option>
+                        <option value="09:00">09:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="12:00">12:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                        <option value="17:00">17:00</option>
+                    </select>
+
+                    <label for="telefono">Teléfono</label>
+
+                    <input type="text" id="telefono">
+
+                    <label for="motivo">Motivo de la consulta</label>
+
+                    <textarea id="motivo" rows="5"></textarea>
+
+                    <div class="botones">
+                        <input type="button" value="Solicitar cita" onclick="procesar()">
+                        <input type="reset" value="Limpiar">
+                    </div>
+                </form>
+                <div id="resultado" class="modal">
+
+                    <div class="modal-contenido">
+
+                        <h3 id="tituloResultado"></h3>
+
+                        <p id="mensajeResultado"></p>
+
+                        <button type="button" onclick="cerrarResultado()">
+                            Cerrar
+                        </button>
+
+                    </div>
+
+                </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="contenedor-footer">
+            <div class="footer-columna">
+                <h3>Garritas Peludas</h3>
+                <p>
+                    Brindamos atención veterinaria con profesionales
+                    comprometidos con el bienestar y la salud de tus mascotas.
+                </p>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Enlaces</h3>
+
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="/pages/servicios.html">Servicios</a></li>
+                    <li><a href="/pages/contacto.html">Contacto</a></li>
+                    <li><a href="/pages/cita.html">Citas</a></li>
+                    <li><a href="/pages/calendario.html">Calendario</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Horario</h3>
+
+                <p>Lunes a Viernes</p>
+
+                <p>8:00 am - 6:00 pm</p>
+
+                <p>Sábados</p>
+
+                <p>8:00 am - 2:00 pm</p>
+
+                <p>Clinica</p>
+
+                <p>24Horas</p>
+
+            </div>
+
+            <div class="footer-columna">
+
+                <h3>Síguenos</h3>
+
+                <a href="#">Facebook</a><br>
+
+                <a href="#">Instagram</a><br>
+
+                <a href="#">TikTok</a>
+
+            </div>
+
+        </div>
+
+        <div class="copy">
+
+            <p>
+
+                © 2026 Garritas Peludas | Todos los derechos reservados.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="/js/menu.js"></script>
+    <script src="../js/cita.js"></script>
+</body>
+
+</html>

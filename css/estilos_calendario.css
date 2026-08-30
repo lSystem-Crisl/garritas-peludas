@@ -1,0 +1,257 @@
+/*    CALENDARIO DE CITAS */
+
+#calendario {
+    padding: 50px 20px;
+    background-color: #f1f6ff;
+    min-height: 500px;
+}
+
+#calendario .contenedor {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+#calendario h2 {
+    color: #0645a5;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+#calendario .contenedor > p {
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+
+/*    CONSULTA DE FECHA */
+
+.consulta-fecha {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.consulta-fecha label {
+    display: block;
+    text-align: left;
+
+    color: #0645a5;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.consulta-fecha input[type="date"] {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    box-sizing: border-box;
+}
+
+.consulta-fecha input[type="button"] {
+    margin-top: 20px;
+
+    background-color: #0066cc;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    padding: 12px 25px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.consulta-fecha input[type="button"]:hover {
+    background-color: #004c99;
+}
+
+
+/*    RESULTADO DEL CALENDARIO */
+
+#resultadoCalendario {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+
+    max-width: 700px;
+
+    margin: 0 auto 30px auto;
+}
+
+#resultadoCalendario h3 {
+    color: #0645a5;
+
+    font-size: 24px;
+
+    margin-bottom: 25px;
+}
+
+
+/*    LISTA DE HORARIOS */
+
+#listaHorarios {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.horario {
+    width: 130px;
+
+    padding: 15px 10px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+
+/* HORARIO DISPONIBLE */
+
+.disponible {
+    background-color: #d4edda;
+
+    color: #155724;
+
+    border: 1px solid #b7dfbf;
+}
+
+
+/* HORARIO OCUPADO */
+
+.ocupado {
+    background-color: #f8d7da;
+
+    color: #721c24;
+
+    border: 1px solid #f1b0b7;
+}
+
+
+/*    INFORMACIÓN */
+
+.informacion-calendario {
+    max-width: 700px;
+
+    margin: 0 auto 30px auto;
+
+    padding: 20px;
+
+    background-color: #ffffff;
+
+    border-left: 5px solid #0066cc;
+
+    border-radius: 5px;
+
+    text-align: left;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+}
+
+.informacion-calendario p {
+    margin: 8px 0;
+}
+
+
+/*    BOTÓN SOLICITAR CITA */
+
+.boton-cita {
+    margin-top: 25px;
+}
+
+.boton-cita a {
+    display: inline-block;
+
+    background-color: #0066cc;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 25px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+}
+
+.boton-cita a:hover {
+    background-color: #004c99;
+}
+
+
+/*DISEÑO RESPONSIVO*/
+
+/*    TABLET */
+
+@media (min-width: 761px) and (max-width: 1024px) {
+
+    #calendario {
+        padding: 40px 25px;
+    }
+
+    #calendario h2 {
+        font-size: 32px;
+    }
+
+    #calendario .contenedor > p {
+        font-size: 17px;
+    }
+
+    .consulta-fecha,
+    #resultadoCalendario,
+    .informacion-calendario {
+        max-width: 750px;
+    }
+
+    .horario {
+        width: 120px;
+    }
+
+}
+/*    CELULAR */
+@media (max-width: 768px) {
+
+    #calendario {
+        padding: 30px 15px;
+    }
+
+    #calendario h2 {
+        font-size: 28px;
+    }
+
+    #calendario .contenedor > p {
+        font-size: 16px;
+    }
+
+    .consulta-fecha,
+    #resultadoCalendario {
+        padding: 20px;
+    }
+
+    .horario {
+        width: 110px;
+    }
+
+}
